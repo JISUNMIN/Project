@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Hobbyist login</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/header.css">
+
+<script src="js/jquery.js"></script>
+<script src="js/gnb.js"></script>
+<script src="https://kit.fontawesome.com/53a8c415f1.js" crossorigin="anonymous"></script>
+<style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.login {
+  width: 90%;
+  height: 600px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2 {
+  color: tomato;
+  font-size: 2em;
+}
+.login_sns {
+  padding: 20px;
+  display: flex;
+}
+
+.login_sns li {
+  padding: 0px 15px;
+}
+
+.login_sns a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 50px;
+  background: white;
+  font-size: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-box {
+  margin-top: 10px;
+  position: relative;
+ 
+}
+
+.input-box > input {
+    background:transparent;
+  width: 90%;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  font-size: 10pt;
+  padding-left: 15px;
+  
+}
+input::placeholder{
+    color:transparent;
+}
+input:placeholder-shown +label{
+            color: #aaa;
+            font-size: 15pt;
+            top:15px;
+        }
+        
+        input:focus+label, label{
+            color: #8aa1a1;
+            font-size: 0pt;
+            pointer-events: none;
+            position: absolute;
+            left: 20px;
+            top: 30px;
+            transition: all 0.2s ease;
+            -webkit-transition:all  0.2s ease;
+            -moz-transition: all  0.2s ease;
+            -o-transition: all  0.2s ease; 
+            
+        }
+        input:focus, input:not(:placeholder-shown){
+            border-bottom: solid 1px #8AA1A1;
+            outline: none;
+        }
+      
+.login_etc {
+  padding: 10px;
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  
+}
+
+.submit {
+  margin-top: 50px;
+
+}
+.submit input {
+  width: 90%;
+  height: 50px;
+  border: 0;
+  outline: none;
+  border-radius: 40px;
+  background: linear-gradient(to left, rgb(255, 77, 46), rgb(255, 155, 47));
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+input {
+  appearance: button;
+  width: auto;
+  margin: 5px;
+}
+.checkbox{
+  display: flex;
+  width:100px;
+}
+
+
+/* 일단은 css부분 여기다 적어놓고 나중에 합치는쪽으로 수정 */
+</style>
+</head>
+<body>
+<!--헤더 영역-->
+<div id="header-wrap">
+  <header class="header-inner">
+   <a href="Main.html"><img src="images/logo/logo_bk.svg" class="logo_bk"></a>
+			<a href="Main.html"><img src="images/logo/logo_w.svg" class="logo_w"></a>
+          <p class="mobile-menu-open"><i class="fas fa-bars"></i></p>
+    <div class="mobile-menu-wrap">
+      <div class="mobile-menu-scroll">
+        <ul class="util-menu">
+          <li><a href="Login.html">로그인</a></li>
+          <li><a href="signup.html">회원가입</a></li>
+        </ul>
+        <nav id="gnb">
+          <h2 class="blind">메인메뉴</h2>
+          <ul>
+            <li class="m0">
+              <a href="Main.html">홈</a>
+            </li>
+            <li class="m1">
+              <a href="#">전체 카테고리
+                                  <i class="fas fa-chevron-down"></i>
+                              </a>
+              <ul>
+                <li class="ct_art"><a href="List_art.html">미술</a></li>
+                <li class="ct_cook"><a href="List_cook.html">요리</a></li>
+                <li class="ct_music"><a href="List_music.html">음악</a></li>
+              </ul>
+            </li>
+            <li class="m2">
+              <a href="#">게시판
+                                  <i class="fas fa-chevron-down"></i>
+                              </a>
+              <ul>
+                <li><a href="Notice.html">공지사항</a></li>
+                <li><a href="Question.html">문의사항</a></li>
+                <li><a href="Review.html">후기</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="mobile-menu-close">
+              <i class="fas fa-window-close"></i>
+      </p>
+    </div>
+  </header>
+</div>
+
+
+        <div class="wrap">
+            <div class="login">
+              
+                <h2>Hobbyist 로그인</h2>
+                <form>
+                
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="login_etc">
+                    <div class="checkbox">
+                    <input type="checkbox" name="checkbox" id="">로그인 유지
+                  </div>
+                    <div class="forgot_pw">
+                    <a href="">비밀번호 찾기</a>
+                   </div>
+                </div>
+                <div class="submit">
+                  
+                    <input type="submit" value="로그인">
+                </div>
+                <div class="login_sns">
+                    <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                    </div>
+                
+            </form>
+            </div>
+        </div>
+    </body>
+</html>

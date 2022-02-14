@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <!-- SNS share websites --> 
+<script type="text/javascript" async> 
+    var url_default_ks = "https://story.kakao.com/share?url=";
+    var url_default_fb = "https://www.facebook.com/sharer/sharer.php?u=";
+    var url_default_tw_txt = "https://twitter.com/intent/tweet?text="; 
+    var url_default_tw_url = "&url="; 
+    var url_default_naver = "http://share.naver.com/web/shareView.nhn?url="; 
+    var title_default_naver = "&title="; 
+    var url_this_page = location.href; 
+    var title_this_page = document.title; 
+    var url_combine_ks = url_default_ks + url_this_page; 
+    var url_combine_fb = url_default_fb + url_this_page; 
+    var url_combine_tw = url_default_tw_txt + document.title + url_default_tw_url + url_this_page; 
+    var url_combine_naver = url_default_naver + encodeURI(url_this_page) + title_default_naver + encodeURI(title_this_page); 
+    </script>
+    <style>
+    div img{
+        height:60px;
+    }
+    </style>
+</head>
+<body>
+    <!-- SNS share buttons --> 
+    <div style="width: 100%; text-align: center; margin-bottom: 50px; margin-top:80px;"> 
+     <!-- Facebook share button --> 
+     <h3>sns로 공유하기</h3>
+     <a href="" onclick="window.open(url_combine_fb, '', 'scrollbars=no, width=600, height=600'); return false;">
+     <img src="/images/facebook.svg" title="페이스북으로 공유하기" class="sharebtn_custom" style="width: 48px;"></a> 
+     <!-- Twitter share button --> 
+     <a href="" onclick="window.open(url_combine_tw, '', 'scrollbars=no, width=600, height=600'); return false;">
+     <img src="/images/twitter.svg" title="트위터로 공유하기" class="sharebtn_custom" style="width: 48px;"></a> 
+     <!-- Kakaotalk share button --> 
+     <a href="" onclick="window.open(url_combine_ks, '', 'scrollbars=no, width=600, height=600'); return false;">
+     <img src="/images/kakao.svg" title="카카오톡으로 공유하기" class="sharebtn_custom" style="width: 48px;"></a>
+     </div>
+</body>
+</html>

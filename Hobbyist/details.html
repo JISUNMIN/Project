@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Hobbyist Details</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/details.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<script src="js/jquery.js"></script>
+<script src="js/gnb.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/details_slider.js"></script>
+</head>
+<body>
+    
+<!--헤더 영역-->
+    <section id="header-wrap">
+        <header class="header-inner">
+            <a href="Main.html"><img src="images/logo/logo_bk.svg" class="logo_bk"></a>
+			<a href="Main.html"><img src="images/logo/logo_w.svg" class="logo_w"></a>
+            <p class="mobile-menu-open"><i class="fas fa-bars"></i></p>
+            <div class="mobile-menu-wrap">
+                <div class="mobile-menu-scroll">
+                    <ul class="util-menu">
+                        <li><a href="Login.html">로그인</a></li>
+                        <li><a href="signup.html">회원가입</a></li>
+                    </ul>
+                    <nav id="gnb">
+                        <h2 class="blind">메인메뉴</h2>
+                        <ul>
+                            <li class="m0">
+                                <a href="Main.html">홈</a>
+                            </li>
+                            <li class="m1">
+                                <a href="#">전체 카테고리
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul>
+                                    <li class="ct_art"><a href="List_art.html">미술</a></li>
+                                    <li class="ct_cook"><a href="List_cook.html">요리</a></li>
+                                    <li class="ct_music"><a href="List_music.html">음악</a></li>
+                                </ul>
+                            </li>
+                            <li class="m2">
+                                <a href="#">게시판
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="Notice.html">공지사항</a></li>
+                                    <li><a href="Question.html">문의사항</a></li>
+                                    <li><a href="Review.html">후기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <p class="mobile-menu-close">
+                <i class="fas fa-window-close"></i>
+                </p>
+            </div>
+        </header>
+    </section>
+
+<!--상세 페이지-->
+    <section class="content">
+        <!--사이드 인포-->
+        <div class="main_img">                       <!--사진-->
+            <img src="images/details/detail_m.jpg">
+        </div>
+        <section class="aside_s">                         <!--인포-->
+            <div class="aside_info">
+                <div>
+                    <div class="title">
+                        <h4>클래스 101</h4>
+                        <h2>잊을 수 없는 매혹적인 인물화, <br>아이패드로 수작업 감성과 감각적인 색감을 그려요</h2>
+                        <p>Zipcy</p>
+                    </div>
+                    <div class="btn">
+                        <div class="btn_like">
+                            <form>
+                                <input type="checkbox" id="wishlist">
+                                <label for="wishlist" class="like">
+                                    <i class="far fa-heart"><p>찜하기</p></i>    <!--폰트어썸 빈하트-->
+                                    <i class="fas fa-heart"><p>찜하기</p></i>    <!--폰트어썸 풀하트-->
+                                </label>
+                            </form>
+                        </div>
+                        <a href="Popup.html" onclick="window.open(this.href, '_blank', 'width=350, height=300'); return false;">
+                            <div class="btn_share">
+                                <i class="fas fa-share-alt"><p>공유하기</p></i>
+                            </div>
+                        </a>
+                        <div class="btn_link">
+                            <a href="https://class101.net/products/Xl6yK2a732vqL9P09cLq?utm_campaign=share_feature&utm_content=share_feature&utm_medium=referral&utm_source=link&utm_term=all"><p>클래스 바로가기</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail_s">                    
+            <div class="container">                                         <!--상세-->
+                <div class="detail">      
+                    <div class="detail_box">
+                        <h3><span class="sec-tit">클래스 소개</span></h3>
+                        <h4>초급자분들을 위한 아이패드 인물화 클래스입니다.</h4>
+                        <img src="images/details/content01.jpg">
+                        <p>안녕하세요. 일러스트레이터 집시라는 예명으로 활동하며, 국내외 다양한 기업과 협업을 하고 있습니다. 연인의 스킨십을 소재로 그린 세미 춘화집 [닿음 TOUCH] 과, 컬러링북 [설렘의 온도] 를 출간하였습니다.</p>
+                        <br>
+                        <h4>꽉 채운 커리큘럼, 기초부터 채색까지 완벽하게!</h4>
+                        <img src="images/details/content02.jpg">
+                        <p>이번 클래스는 연필드로잉 클래스보다 내용이 압도적으로 많아요.
+
+                            정면 뿐만 아니라, 반측면과 측면과 인체를 추가하였습니다. 그리고 아이패드로 채색하는 테크닉, 색감과 후보정에 대해 저만의 꿀팁을 가득 담아 알려드릴 거예요.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="review_s">                      <!--리뷰-->
+            <div class="container">
+                <hr class="divider">
+                <div class="review_box">
+                    <div class="review-tit">
+                        <h3><span class="sec-titt">클래스 후기</span></h3> 
+                        <h4><a href="Review.html">더보기</a></h4>
+                    </div>
+                    <ul class="bxslider">
+                        <li>
+                            <div class="review-card">
+                                <div class="review-img01"></div>
+                                <div class="review-content">
+                                    <h4 class="name">Eun</h4>
+                                    <span class="date">5 days ago</span>
+                                    <p>에어브러쉬를 더많이 사용해서 부드럽게 그려 봤어요~ 메이크업하는걸 좋아해서 그런지 너무 재미있었습니다ㅠㅠ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-card">
+                                <div class="review-img02"></div>
+                                <div class="review-content">
+                                    <h4 class="name">전예나</h4>
+                                    <span class="date">1 weeks ago</span>
+                                    <p>저는 다른 이미지 참고해서 해봤어요! 평소에 프로크리에이트 많이 쓰지만 쓰던거만 써서 새로운 펜 많이 쓸 수 있어서 좋았어요 ㅎㅎ</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-card">
+                                <div class="review-img03"></div>
+                                <div class="review-content">
+                                    <h4 class="name">김아람</h4>
+                                    <span class="date">4 months ago</span>
+                                    <p>가성비 괜찮은 클래스 같아요. 학원에서 배우는 취미성인반 클래스보다도 더 자세한 내용과 디테일한 설명이 쏙쏙 이해가 되고 노하우도 전수 받는 느낌이라 유익합니다.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-card">
+                                <div class="review-img04"></div>
+                                <div class="review-content">
+                                    <h4 class="name">지니</h4>
+                                    <span class="date">5 months ago</span>
+                                    <p>내용이 알차고 작가님이 섬세히 잘가르쳐 주세요 답글도 잘 달아주시고 고칠 부분도 가르쳐 주시고 좋아요</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-card">
+                                <div class="review-img05"></div>
+                                <div class="review-content">
+                                    <h4 class="name">헤밍</h4>
+                                    <span class="date">5 months ago</span>
+                                    <p>아이패드를 가지게되면서 처음으로 그림수업을 받아봤어요. 너무너무 좋은 수업해주셔서 감사합니다.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </section>
+    
+    <section class="recommend_s container">                      <!--추천 동영상-->
+        <hr class="divider">
+        <div class="recommend">           
+            <h3><span class="sec-tit">추천 동영상</span></h3>
+            <div class="youtube">
+                <iframe width="380" height="220" src="https://www.youtube.com/embed/tFoo5_Dz-w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="380" height="220" src="https://www.youtube.com/embed/52kA7D-FgoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="top_btn">
+        <a href="#"><i class="fas fa-chevron-up"></i><br>TOP</a>
+    </div>
+    
+<!--푸터 영역-->
+    <section id="footer-wrap">
+        <footer class="footer-inner">
+            <img src="images/logo/logo_bk.svg" class="logo_footer">
+            <p>Copyright&copy;2021 하비스트㈜ Hobbyist Co., Ltd. All Rights Reserved</p>
+        </section>
+    </section>
+
+</body>
+</html>

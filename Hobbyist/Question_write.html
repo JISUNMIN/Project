@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>Hobbyist question_write</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/media.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<script src="js/jquery.js"></script>
+<script src="js/gnb.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<!-- 게시글 작성을 이거로 변경해야 할거같아요-->
+
+<body>
+ <!--헤더 영역-->
+ <div id="header-wrap">
+    <header class="header-inner">
+        <a href="Main.html"><img src="images/logo/logo_bk.svg" class="logo_bk"></a>
+			<a href="Main.html"><img src="images/logo/logo_w.svg" class="logo_w"></a>
+        <p class="mobile-menu-open"><i class="fas fa-bars"></i></p>
+        <div class="mobile-menu-wrap">
+            <div class="mobile-menu-scroll">
+                <ul class="util-menu">
+                    <li><a href="Login.html">로그인</a></li>
+                    <li><a href="signup.html">회원가입</a></li>
+                </ul>
+                <nav id="gnb">
+                    <h2 class="blind">메인메뉴</h2>
+                    <ul>
+                        <li class="m0">
+                            <a href="Main.html">홈</a>
+                        </li>
+                        <li class="m1">
+                            <a href="#">전체 카테고리
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul>
+                                <li class="ct_art"><a href="List_art.html">미술</a></li>
+                                <li class="ct_cook"><a href="List_cook.html">요리</a></li>
+                                <li class="ct_music"><a href="List_music.html">음악</a></li>
+                            </ul>
+                        </li>
+                        <li class="m2">
+                            <a href="#">게시판
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul>
+                                <li><a href="Notice.html">공지사항</a></li>
+                                <li><a href="Question.html">문의사항</a></li>
+                                <li><a href="Review.html">후기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="mobile-menu-close">
+            <i class="fas fa-window-close"></i>
+            </p>
+        </div>
+    </header>
+</div>
+
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>문의사항 작성</strong>
+        </div>
+        <div class="board_write_wrap">
+            <form action="write.jsp" method="POST">
+            <div class="board_write">
+                <div class="title">
+                                <dl>
+                                    <dt>제목</dt>
+                                    <dd><input type="text" placeholder="제목 입력" required ></dd>
+                                </dl>
+                            </div>
+                            <div class="info">
+
+                                <dl>
+                                    <dt>글쓴이</dt>
+                                    <dd><input type="text" placeholder="글쓴이 입력" required></dd>
+                                </dl>
+                                <dl>
+                                    <dt>비밀번호</dt>
+                                    <dd><input type="password" placeholder="비밀번호 입력" required></dd>
+                                </dl>
+                                <dl>
+                                    <dt>이메일</dt>
+                                    <dd><input type="email" placeholder="이메일 입력"></dd>
+                                </dl>
+                            </div>
+                            <div class="cont">
+                                <textarea placeholder="내용 입력"></textarea>
+                            </div>
+                   
+            </div>
+                <div class="bt_wrap_1">
+                    <input type="submit" value="등록">
+                    <input type="reset">
+                    <input type="button" value="목록" onclick="location.href='Question.html'">
+                </div>
+            </form>   
+
+        </div>
+    </div>
+</body>
+</html>

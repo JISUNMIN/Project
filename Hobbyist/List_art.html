@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,minimum-scale=1,user-scalable=no">
+<title>Hobbyist list_art</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/list.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<script src="js/jquery.js"></script>
+<script src="js/gnb.js"></script>
+<script src="js/flat.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+    <!--헤더 영역-->
+	<div id="header-wrap">
+		<header class="header-inner">
+			<a href="Main.html"><img src="images/logo/logo_bk.svg" class="logo_bk"></a>
+			<a href="Main.html"><img src="images/logo/logo_w.svg" class="logo_w"></a>
+            <p class="mobile-menu-open"><i class="fas fa-bars"></i></p>
+			<div class="mobile-menu-wrap">
+				<div class="mobile-menu-scroll">
+					<ul class="util-menu">
+						<li><a href="Login.html">로그인</a></li>
+						<li><a href="signup.html">회원가입</a></li>
+					</ul>
+					<nav id="gnb">
+						<h2 class="blind">메인메뉴</h2>
+						<ul>
+							<li class="m0">
+								<a href="Main.html">홈</a>
+							</li>
+							<li class="m1">
+								<a href="List_total.html">전체 카테고리
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+								<ul>
+									<li class="ct_art"><a href="List_art.html">미술</a></li>
+									<li class="ct_cook"><a href="List_cook.html">요리</a></li>
+									<li class="ct_music"><a href="List_music.html">음악</a></li>
+								</ul>
+							</li>
+							<li class="m2">
+								<a href="#">게시판
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+								<ul>
+									<li><a href="Notice.html">공지사항</a></li>
+									<li><a href="Question.html">문의사항</a></li>
+									<li><a href="Review.html">후기</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<p class="mobile-menu-close">
+                <i class="fas fa-window-close"></i>
+				</p>
+			</div>
+		</header>
+	</div>
+    <section class="side_menu">
+        <ul>
+            <li class="total"></li><a href="List_total.html">전체메뉴</a></li>
+            <li class="art"><a href="List_art.html"><span style="text-decoration:underline">미술</span></a></li>
+            <li class="cook"><a href="List_cook.html">요리</a></li>
+            <li class="music"><a href="List_music.html">음악</a></li>
+        </ul>
+    </section>
+    <div class="dropdown">
+        <div class="dropbtn">정렬</div>
+        <div class="dropdown-content">
+            <a href="#">인기순</a>
+            <a href="#">최신순</a>
+            <a href="#">추천순</a>
+        </div>
+    </div>
+        <section class="image_box">
+            <figure>
+                <a href="details.html"><img src="images/list/cotton.png" alt=""><span class="title">[💣24시간]공간에 생생한 감각을 더해요, 펀치니들을 이용한 터프팅 소품 제작법</span></a>
+                <figcaption class="figcaption_class">
+                    <input type="checkbox" name="checker" id="pick2"> <label for="pick2">찜</label>
+                    <a href="Popup.html" onclick="window.open(this.href, '_blank', 'width=350, height=300'); return false;">
+                        <span id="sns">공유하기</span>
+                    </a>
+                </figcaption>
+            </figure>
+            <figure>
+                <a href="details.html"><img src="images/list/woman.png" alt=""><span class="title">[💣24시간]아이패드로 완성하는 아름다움, 수홍의 디지털 인물화 수업</span>
+                </a>
+                <figcaption class="figcaption_class">
+                    <input type="checkbox" name="checker" id="pick3"> <label for="pick3">찜</label>
+
+                    <a href="Popup.html" onclick="window.open(this.href, '_blank', 'width=350, height=300'); return false;">
+                        <span id="sns">공유하기</span>
+                    </a>
+                </figcaption>
+            </figure>
+            <figure>
+                <a href="details.html"><img src="images/list/neat.png" alt=""><span class="title">[💣오늘의특가]내 손이 뜨개 도구가 되는, 니트웨일의 암니팅</span></a>
+                <figcaption class="figcaption_class">
+                    <input type="checkbox" name="checker" id="pick5"> <label for="pick5">찜</label>
+
+                    <a href="Popup.html" onclick="window.open(this.href, '_blank', 'width=350, height=300'); return false;">
+                        <span id="sns">공유하기</span>
+                    </a>
+                </figcaption>
+            </figure>
+            <figure>
+                <a href="details.html"><img src="images/list/neddle.png" alt=""><span class="title">[💣오늘의특가]실로 그리는 컬러 콜라주, 태피스트리 도형 위빙</span>
+                </a>
+                <figcaption class="figcaption_class">
+                    <input type="checkbox" name="checker" id="pick6"> <label for="pick6">찜</label>
+                    
+                    <a href="Popup.html" onclick="window.open(this.href, '_blank', 'width=350, height=300'); return false;">
+                        <span id="sns">공유하기</span>
+                    </a>
+                </figcaption>
+            </figure>
+     
+        <div class="paging">
+            <a class="select" href="#"><</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">></a>
+        </div>
+        </section>
+        <div class="top"><a href="#header-wrap">TOP</a></div>
+        <section></section>
+        <section></section>
+        <section></section>
+    </div>
+</body>
+</html>

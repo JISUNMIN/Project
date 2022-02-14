@@ -1,0 +1,377 @@
+/* 모바일 CSS */
+/* 기본 CSS */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+    
+/* 모바일 사이드 인포 CSS */
+.aside_info {
+    height: max-content;
+    background-color: white;
+    box-shadow: 0 2px 4px 0 #8616161a;
+    border: 1px solid #f5f5f5;
+}
+
+.title {
+    font-size: 15px;
+    padding: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.btn {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-top: 1px solid rgb(199, 199, 199);
+    text-align: center;
+    bottom: 0px;
+    position: fixed;
+    z-index: 99;
+}
+
+.btn div {
+    margin-top: 15px;
+    vertical-align: middle;
+    display: inline-block;
+}
+ 
+.btn_like {                
+    width: 20%;
+    height: 30px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+    position: relative;
+}
+
+.like i {
+    color: gray;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.like p {
+    display: none;
+}
+
+.like i:last-child {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+input:checked + label i:last-child {
+    color: tomato;
+    opacity: 1;
+}
+
+input {
+    display: none;
+}
+
+.btn_share {
+    width: 20%;
+    height: 30px;
+    padding-top: 3px;
+    color: gray;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 5px;
+}
+
+.btn_share p {
+    display: none;
+}
+
+.btn_link {
+    width: 50%;
+    height: 30px;
+    padding-top: 2px;
+    color: white;
+    background-color: tomato;
+    border-radius: 5px;
+}
+
+.btn_link a {
+    color: white;
+    text-decoration: none;
+}
+
+/* 모바일 디테일 CSS */
+
+.detail {
+    margin-top: 30px;
+}
+
+.detail_box {
+    line-height: 30px;
+}
+
+.detail_s img {
+    margin: 20px 0px;
+}
+
+.sec-tit {
+    font-size: 20px;
+}
+
+p {
+    line-height: 25px;
+}
+
+.divider {
+    width: 100%;
+    max-width: 1132px;
+    margin: 20px 0;
+    background:#eee;
+}
+
+/* 모바일 리뷰 CSS */
+
+.review_box {
+    line-height: 30px;
+    position: relative;
+}
+
+.bx-wrapper, .bx-viewport {
+    height: 270px !important;
+}
+
+.review_box .bx-prev, .review_box .bx-next {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.review_box .bx-prev {
+    color: gray;
+    right: 100%;
+}
+
+.review_box .bx-next {
+    color: gray;
+    left: 100%;
+}
+
+.review-tit {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.review-tit h3 {
+    font-size: 20px;
+    display: inline-block;
+}
+
+.review-tit h4 {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+.review-tit a {
+    color: black;
+}
+
+.review-card {
+    width: 100%;
+    height: 260px;
+    box-shadow: 4px 4px 6px 0px rgb(0 0 0 / 10%);
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.review-img01 {
+    background-image: url(../images/review/review01.jpg);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 50%;
+}
+
+.review-img02 {
+    background-image: url(../images/review/review02.jpg);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 50%;
+}
+
+.review-img03{
+    background-image: url(../images/review/review03.jpg);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 50%;
+}
+
+.review-img04 {
+    background-image: url(../images/review/review04.jpg);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 50%;
+}
+
+.review-img05 {
+    background-image: url(../images/review/review05.jpg);
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 50%;
+}
+
+.review-content {
+    margin: 10px;
+}
+
+.name {
+    display: inline-block;
+}
+
+.date {
+    font-size: 12px;
+    float: right;
+}
+
+/* 모바일 추천동영상 CSS */
+.youtube {
+    margin: 20px;
+    text-align: center;
+}
+
+.youtube iframe {
+    margin: 10px;
+}
+
+
+.top_btn {
+    width: 50px;
+    height: 45px;
+    font-size: 12px;
+    text-align: center;
+    background-color: black;
+    border-radius: 10px;
+    padding-top: 5px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+}
+
+.top_btn a {
+    color: white;
+}
+
+
+/* 모바일 푸터 CSS */
+.footer-inner {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(199, 199, 199);
+    padding: 20px;
+}
+
+.logo_footer {
+    width: 100px;
+    margin-right: 20px;
+}
+
+/* 태블릿 CSS */
+@media all and (min-width:800px){
+
+    /* 기본 CSS */
+
+    /* 태블릿 사이드 인포 CSS */
+
+    .btn p {   
+        padding-left: 5px;            
+        display: inline;
+    }
+ 
+}
+
+
+
+
+/* PC CSS */
+@media all and (min-width:1132px){
+
+    /* PC 기본 CSS */
+    .content {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;       
+    }
+
+    .container {
+        width: 600px;
+        padding: 30px;
+    }
+
+    /* PC 사이드 인포 CSS */
+    .main_img {
+        width: 600px;
+    }
+
+    .aside_s {
+        position: sticky;
+        top: 30px;
+    }
+
+    .aside_info {
+        width: 350px;
+        height: 430px;
+    }
+
+    .title {
+        padding: 50px 40px;
+        text-align: left;
+    }
+
+    .btn {
+        width: 349px;
+        position: relative;
+        padding-top: 15px;
+    }
+
+    .btn_like {
+        width: 40%;
+        margin: 0 6px;
+    }
+
+    .btn_share {
+        width: 40%;
+        margin: 0 6px;
+    }
+
+    .btn_link {
+        width: 86%;
+        height: 50px;
+        padding-top: 10px;
+        font-size: 17px;
+
+    }
+
+    /* PC 추천 동영상 CSS */
+    .recommend_s {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+}

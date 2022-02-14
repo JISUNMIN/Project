@@ -1,0 +1,509 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+
+  /*모바일용 CSS*/
+ /* 기본 CSS*/
+*{
+    font-family: 'Hanna', serif;
+}
+
+ #wrap{ /*모바일,태블릿,PC에 공통으로 적용이 됨*/
+ flex-flow:column nowrap;  /*세로로 한요소를 배치*/
+ width:100%;
+ margin:0 auto; /*중앙에 배치*/
+    }
+  #wrap section{ /*모든 section 태그에 대하여*/
+  box-sizing: border-box; /*width를 테두리까지 포함(content+padding+border)*/
+    }
+ .logo a{
+        color:black;
+    }
+    .paging a{
+    color:black;
+}
+a{
+    color:black;
+}
+/* 인포메이션 영역 CSS */
+.info_section{
+    order:1;
+    width:100%;
+    background: rgb(124, 124, 133);
+}
+
+.info_list{
+    display:flex;
+}
+
+.info_list li{
+    width:50%;
+    text-align:center;  
+}
+
+.info_list li a{
+    display:block;
+    padding:15px 0;
+    padding:0.938rem 0;
+}
+
+/* 헤더 영역 CSS */
+#header{
+    display:flex;
+    order:2;
+    flex-direction:column;
+    position:relative;
+    width:100%;
+}
+
+/* 헤더 영역 > 로고 CSS*/
+.logo{
+    order:1;
+    width:100%;
+    padding:30px 0;
+    padding:1.875rem 0;
+    font-size:1.188em;
+    font-size:1.188rem;
+    line-height:21px;
+    line-height:1.313rem;
+    text-align:center;
+    background:#464763;
+    text-shadow:0px 1px 1px #555557;
+}
+/*사이드메뉴*/
+.side_menu{
+    display: none;
+}
+
+
+/* 헤더 영역 > 내비 CSS*/
+.nav{
+    order:2;
+    width:100%;
+}
+
+.gnb{
+    display: none;
+    width: 100%;
+}
+
+.gnb>li{
+    padding: 10px;
+    width:100%;
+    background:#2c3e50;
+}
+
+.gnb li a{
+    width:80%;
+}
+
+.category1, .category2{
+    display:none;
+}
+
+.category1>li, .category2>li{
+    width:80%;
+    background:#596e86;
+}
+
+.category1>li a, .category2>li a {
+    width:80%;
+    font-size: 0.938em;
+}
+/*검색 버튼*/
+.search{
+    padding-bottom: 20px;
+}
+.search_search{
+    width: 80%;
+    height:30px;
+}
+.search_text{
+    width: 18.3%;
+    height:30px;
+}
+
+
+
+/* 헤더영역 > 카테고리 세부 리스트 CS */
+.category_list li{
+    width:80%;
+    background:#04325f;
+}
+
+.category_list li a{
+    width:80%;
+    padding:20px 0;
+    padding:1.250rem 0;
+    font-size:0.738em;
+    font-size:0.738rem;
+    text-indent:30px;
+    text-indent:2.250rem;
+}
+
+
+/*정렬 드롭다운 버튼*/
+.dropdown{
+    order:3;
+    padding-bottom: 5%;
+    margin-left: 30px;
+}
+.dropbtn{
+    background-color: white;
+    width:20%;
+    font-size:15px;
+}
+.dropdown-content{
+  display: none;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 3.5vw;
+}
+/*top 버튼*/
+.top{
+    position:fixed;
+    font-size: larger;
+    background-color:grey;
+    display: none;
+}
+.top a{
+    text-decoration:none;
+    color:white;
+}
+
+/*토굴 버튼*//* 헤더 영역 > 드롭다운 토글 버튼 CSS*/
+.sub_menu_toggle_btn1{
+    float:right;
+    width:20%;
+    text-indent:-9999px;
+    background:url(images_1/s_images/sub_menu_toggle_btn.png) center center no-repeat;
+    cursor:pointer;
+}
+
+.sub_menu_toggle_btn2{
+    float:right;
+    width:20%;
+    text-indent:-9999px;
+    background:url(images_1/s_images/sub_menu_toggle_btn.png) center center no-repeat;
+    cursor:pointer;
+}
+    
+.menu_toggle_btn{
+    display:block;
+    width:30px;
+    width:1.875rem;
+    height:30px;
+    height:1.875rem;
+    position:absolute;
+    top:10px;
+    top:0.625rem;
+    right:10px;
+    right:0.625rem;
+    text-indent:-9999px;
+    background:url(images_1/s_images/menu_toggle_btn.png) no-repeat;
+    cursor:pointer;
+}
+
+/*이미지 */
+.image_box img{
+    width:100%
+}
+.image_box{
+    order:4;
+    display: flex;
+    flex-flow: column;
+}
+figure{
+    text-align: center;
+    padding-bottom:10px;
+}
+figcaption{
+     padding-top: 30px;
+}
+
+/*찜하기*/
+.pick_label{
+    margin-right:10%;
+    margin-left: 15%;
+    margin-bottom:30%;
+    text-align: center;
+    font-size:16px;
+
+}
+/*공유하기*/
+#sns{
+    padding:5%;
+    font-size:18px;
+}
+
+.figcaption_class{
+    padding-bottom:10%;
+}
+
+/*하트이미지*/
+input[type=checkbox] {
+display: none;
+}
+input[type=checkbox] + label {
+background-repeat: no-repeat;
+background-image: url('../images/list/heart.png');
+cursor: pointer;
+padding-left: 10%; 
+background-size:18px;
+font-size: 18px;
+margin-right:10%;
+margin-left: 15%; 
+margin-bottom:30%;
+text-align: center;
+
+}
+input[type=checkbox]:checked + label {
+background-repeat: no-repeat;
+background-image: url('../images/list/fullheart.png');
+cursor: pointer;
+padding-left: 10%; 
+background-size: 18px;
+}
+
+/*페이징*/
+.paging{
+    order:6;
+    text-align: center;
+    font-size:20px;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width:768px){
+/* 기본 CSS */
+.info_list{
+    font-size:20px;
+}
+.logo a{
+    font-size:30px;
+}
+.dropbtn{
+    font-size: 20px;
+}
+.dropdown-content a{
+    font-size: 2vw;
+}
+.image_box{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content:space-between;
+    padding-left:50px;
+    padding-right:100px;
+    position: relative;
+}
+.image_box img{
+    width:320px;
+    height: 240px;
+}
+figure{
+    width: 39%;
+}
+/*공유하기*/
+#sns{
+    padding:5%;
+    font-size:24px;
+}
+
+.figcaption_class{
+    padding-bottom:10%;
+}
+
+/*하트이미지*/
+input[type=checkbox] + label {
+padding-left: 10%; 
+background-size:20px;
+font-size: 25px;
+}
+input[type=checkbox]:checked + label {
+background-size:20px;
+}
+/*페이징*/
+.paging{
+ position:absolute;
+ bottom:0;
+ left:43%;
+ font-size:20px;
+}
+/*top버튼*/
+.top{
+    width: 50px;
+    height: 30px;
+    display:block;
+    bottom:1vw;
+    right:3vw;
+    text-align: center;
+    padding-top: 15px; 
+    padding-bottom:0px;
+}
+
+}
+
+
+
+/* PC용 CSS */
+@media all and (min-width:960px){
+/* 기본 CSS */
+#wrap{
+        position: block; /*로그를 절대좌표로 배치하기 위하여*/
+        width:100%; /*960px*/
+        flex-flow: row wrap;  /*세로로 한요소를 배치*/
+         }
+.image_box{
+    width:70%;
+    order:4;
+    position:absolute;
+    top:200px;
+    left:250px;
+
+    padding-left:5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.figcaption_class{
+    position: relative;
+}
+figure{
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    padding: 25px;
+}
+.title{
+    font-size: 17px;
+    padding-left: 20px;
+}
+/*사이드 메뉴*/
+.side_menu{
+ display: inline-flex;
+ margin-left: 150px;
+ flex-flow: column;
+ order:4;
+ width:10%;
+ height:600px;
+ border: 1px solid;
+ font-size:20px;
+ font-weight: 550;
+ text-align: center;
+ border-radius: 10px 10px;
+}
+/*.side_menu ul li a {
+
+}*/
+.total{
+    padding-top:10%;
+}
+.art{
+    padding:10%;
+}
+.art li{
+    padding-top:5%;
+}
+.cook{
+    padding:10%;
+}
+.cook li{
+    padding-top:5%;
+}
+.music{
+    padding:10%;
+}
+.music li{
+    padding-top:5%;
+}
+/*검색메뉴*/
+.search input{
+    height: 40px;
+}
+.search_text{
+    width:4%;
+}
+.search_search{
+    width:15.55555%;
+}
+
+/* 정렬 드롭다운*/
+.dropdown{
+
+    order:3;
+    width: 15%;
+    height:15px;                                                            
+    z-index: 10;
+    position: absolute;
+    top:180px;
+    left:20%;
+}
+.dropbtn{
+    width: 120px;
+    font-size: 20px;
+    background-color:pink;
+    text-align: center;
+}
+.dropdown-content{
+  display: none;
+}
+.dropbtn:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1vw;
+  background-color:pink;
+}
+
+
+/*찜하기*/
+
+/*공유하기*/
+#sns{
+    padding:5%;
+    font-size:1.2vw;
+}
+figure{
+    position: relative;
+}
+/*하트이미지*/
+input[type=checkbox] {
+display: none;
+}
+input[type=checkbox] + label {
+cursor: pointer;
+background-size:1.2vw;
+font-size: 1.2vw;
+text-align: center;
+
+}
+input[type=checkbox]:checked + label {
+cursor: pointer;
+background-size: 1.2vw;
+}
+/*페이징*/
+.paging{
+    text-align: center;
+    padding-left:7%;
+    font-size:20px;
+}
+.top{
+    bottom:1vw;
+    right:10vw;
+    height: 45px;
+}
+
+
+
+}
