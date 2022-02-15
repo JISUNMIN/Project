@@ -1,0 +1,33 @@
+
+#shop{
+    margin: auto;}
+
+#shop p{
+	text-align:center;
+}
+
+.vhcenter{
+	border:0;
+	display: inline-block;
+	margin:  auto 20px 200px;
+}
+
+table, tr, th, td{
+  border : 0;
+  border-collapse : collapse;
+  	margin:  auto 20px 200px;
+  
+}
+
+.listimage{
+	 border: 0;
+	 width :300px; 
+	 height:300px;
+}
+
+.slide{
+	  top:50px;
+    margin-left: 345px;
+    width: 1100px;
+    height: 500px;
+}
